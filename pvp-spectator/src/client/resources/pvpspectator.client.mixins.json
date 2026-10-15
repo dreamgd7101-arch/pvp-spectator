@@ -1,0 +1,7 @@
+{
+  "required": true,
+  "package": "com.pvpspectator.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": ["InventoryScreenMixin"],
+  "injectors": { "defaultRequire": 1 }
+}

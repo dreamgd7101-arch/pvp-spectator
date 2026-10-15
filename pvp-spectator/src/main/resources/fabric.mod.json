@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "pvpspectator",
+  "version": "${version}",
+  "name": "PvP Spectator POV",
+  "description": "Spectate players in first person with their hotbar, health, hunger and full inventory, and cycle between players who are fighting.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.pvpspectator.PvpSpectator"],
+    "client": ["com.pvpspectator.PvpSpectatorClient"]
+  },
+  "mixins": [
+    { "config": "pvpspectator.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
